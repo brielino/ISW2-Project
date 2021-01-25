@@ -1,0 +1,16 @@
+Istruzioni per la corretta compilazione dei test:
+
+
+Bookkeeper: mvn clean verify
+	
+	per poter generare il report di Pitest:
+	
+	mvn org.pitest:pitest-maven:mutationCoverage
+
+
+Tajo: mvn clean verify -Drat.numUnapprovedLicenses=200
+
+	per poter generare il report di Pitest
+	
+	mvn org.pitest:pitest-maven:mutationCoverage
+ 
